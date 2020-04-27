@@ -5,7 +5,7 @@ FROM php:7.4-cli
 RUN echo "now building..."
 
 # ホストのindex.htmlをImage内にコピー
-ADD /Users/admin/Sites
+ADD ../
 
 # CMD: docker runするときに実行される
 CMD echo "now running..."
