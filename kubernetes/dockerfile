@@ -1,14 +1,14 @@
 # どのイメージを基にするか
-FROM php:7.4-cli
+FROM centos:latest
 
 # RUN: docker buildするときに実行される
 RUN echo "now building..."
 
 # ホストのindex.htmlをImage内にコピー
-ADD ../
+#ADD ../index.php
 
 # CMD: docker runするときに実行される
 CMD echo "now running..."
 
 #ポート80を開ける
-EXPOSE 80
+#EXPOSE 80
