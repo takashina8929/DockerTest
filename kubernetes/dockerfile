@@ -1,5 +1,5 @@
 # どのイメージを基にするか
-FROM 7.3.6-apache-stretch
+FROM php:7.1-apache
 
 # RUN: docker buildするときに実行される
 RUN echo "now building..."
@@ -11,4 +11,4 @@ RUN echo "now building..."
 CMD echo "now running..."
 
 #ポート80を開ける
-#EXPOSE 80
+EXPOSE 80

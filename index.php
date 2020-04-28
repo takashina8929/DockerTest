@@ -54,11 +54,13 @@ if (isset($_POST["login"])) {
     <form method="POST" action="">
         <div>
         <p class="label">ID
+        <br>
         <input type="text" name="id" id="id" class="input"></p>
         <p class="label">PASS
+        <br>
         <input type="password" name="password" class="input"></p>
     </div>
-        <p><input type="submit" value="LOGIN" id="login" class="button"></p>
+        <p><input type="submit" value="LOGIN" name="login" id="login" class="button"></p>
     </form>
 </body>
 </head>
