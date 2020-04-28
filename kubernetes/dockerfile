@@ -1,5 +1,5 @@
 # どのイメージを基にするか
-FROM centos:latest
+FROM 7.3.6-apache-stretch
 
 # RUN: docker buildするときに実行される
 RUN echo "now building..."
